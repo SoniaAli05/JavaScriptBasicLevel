@@ -3,8 +3,26 @@
 	<head>
 	</head>
 	<body>
-		<script>
+		<p id="variables"></p>
+		<p>Click the button below to increase the Age</p>
+		
+		<button onclick="increaseAge()">Increase Age</button>
 
+		<script>
+		let person = {
+		name : "Sonia Ali",
+		age : 23,
+		occupation : "Only the Lord Knows"
+		};
+		console.log(person);
+		document.getElementById("variables").innerHTML = "Name: " + person.name 
+		+ ", Age: " + person.age 
+		+ ", Occupation: " + person.occupation;
+		
+		function increaseAge(){ 
+		console.log(person.age);
+		return person.age++;
+		}
 		</script>
 	</body>
 </html>

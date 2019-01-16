@@ -3,22 +3,25 @@
 	<head>
 	</head>
 	<body>
-		<p id="variables"></p>
 		<script>	
-	//Variables 2
+
 	let person = {
-	name : "Sonia Ali",
-	age : 23,
-	occupation : "Only the Lord Knows"
-	};
+		name : "Sonia Ali",
+		age : 23,
+		occupation : "Only the Lord Knows"
+		};
 	console.log(person);
 	
-	if (age>20 && age<40){
-	document.write("False");
+	function myFunction(){
+		if (person.age>20 && person.age<40){
+		console.log("True");
+		}
+		else{
+		console.log("False");
+		}
 	}
-	else{
-	document.write("True");
-	}
+	console.log(myFunction());
+
 		</script>
 	</body>
 </html>
